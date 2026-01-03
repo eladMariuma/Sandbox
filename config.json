@@ -1,0 +1,31 @@
+{
+  "versions": 1,
+  "generateDate": "03.01.2026",
+  "someKey": {
+    "someInnerKey1": "someInnerValue1",
+    "someInnerKey2": 2
+  },
+  "users": [
+    {
+      "id": "default_user",
+      "name": "default_name",
+      "phone": "000000000",
+      "score": 0,
+      "role": "dev"
+    },
+    {
+      "id": "1",
+      "name": "Noam",
+      "phone": "052111111",
+      "score": 90,
+      "role": "dev"
+    },
+    {
+      "id": "2",
+      "name": "Liad",
+      "phone": "052123111",
+      "score": 92,
+      "role": "dev"
+    }
+  ]
+}
