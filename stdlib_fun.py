@@ -44,11 +44,11 @@ def main():
     user = CUser(1, "Elad", email = "somemail@gmail.com", number=2) #args, kwargs
     # some_bad_config : CConfig = {"env" : 1}
     some_config: CConfigOptional = {"env": "mock_env", "debug": True}
-    p = Path("config.json") # The full path in current folder
+    p = Path("config_stdlib.json") # The full path in current folder
     p.write_text(json.dumps(some_config, ensure_ascii=False)) # Make parameter to json text format
     # We can loaded = json.loads(p.read_text())
     # But better and add afterwards checkers (try except) as in main
-    with open("config.json", "r", encoding="utf-8") as f:
+    with open("config_stdlib.json", "r", encoding="utf-8") as f:
         loaded = json.load(f)
     logging.info("user=%s loaded=%s", user, loaded)
 
